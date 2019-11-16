@@ -1,39 +1,106 @@
 body {
-background-color: #a2ddf5;
-font-family: "Raleway", sans-serif;
-color: #085d8a;
-margin: 0;
-text-align: center; 
+    background-color: #a2ddf5;
+    font-family: "Raleway", sans-serif;
+    color: #085d8a;
+    margin: 0;
+    text-align: center;
 }
-
-
 
 
 /*Navbar*/
+
 .topnav {
-  overflow: hidden;
-  background-color: #a4cce0;
+    overflow: hidden;
+    background-color: #a4cce0;
 }
 
 .topnav a {
-  float: left;
-  color: #085d8a;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    color: #085d8a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #8ed5fa;
-  color: black;
+    background-color: #8ed5fa;
+    color: black;
 }
 
 .topnav a.active {
-  background-color: #085d8a;
-  color: white;
+    background-color: #085d8a;
+    color: white;
 }
 
 .topnav-right {
-  float: right;
+    float: right;
+}
+
+
+/* Style the header */
+
+.header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/* The grid container */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'left left middle middle right right' 'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Style the left column */
+
+.left {
+    grid-area: left;
+}
+
+
+/* Style the middle column */
+
+.middle {
+    grid-area: middle;
+}
+
+
+/* Style the right column */
+
+.right {
+    grid-area: right;
+}
+
+
+/* Style the footer */
+
+.footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: 'header header header header header header' 'left left left left left left' 'middle middle middle middle middle middle' 'right right right right right right' 'footer footer footer footer footer footer';
+    }
 }
