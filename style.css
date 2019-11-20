@@ -1,3 +1,8 @@
+img {
+border-radius: 50%;
+}
+
+
 body {
     background-color: #a2ddf5;
     font-family: "Raleway", sans-serif;
@@ -38,69 +43,44 @@ body {
 }
 
 
-/* Style the header */
 
-.header {
-    grid-area: header;
-    background-color: #f1f1f1;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
+.social-footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-
-/* The grid container */
-
-.grid-container {
-    display: grid;
-    grid-template-areas: 'header header header header header header' 'left left middle middle right right' 'footer footer footer footer footer footer';
-    /* grid-column-gap: 10px; - if you want gap between the columns */
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
 }
 
-.left,
-.middle,
-.right {
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
 }
 
-
-/* Style the left column */
-
-.left {
-    grid-area: left;
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
 }
 
-
-/* Style the middle column */
-
-.middle {
-    grid-area: middle;
-}
-
-
-/* Style the right column */
-
-.right {
-    grid-area: right;
-}
+/* Footer */ 
+footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%
+background-color: #ffffff;
+color: white;
+text-align: center;
 
 
-/* Style the footer */
-
-.footer {
-    grid-area: footer;
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-}
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-areas: 'header header header header header header' 'left left left left left left' 'middle middle middle middle middle middle' 'right right right right right right' 'footer footer footer footer footer footer';
-    }
 }
