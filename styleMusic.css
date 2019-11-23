@@ -1,7 +1,6 @@
 body {
     background-image: url("obrazky/bkg.jpg");
     background-size: cover;
-    font-family: "Raleway", sans-serif;
     color: #e16d2a;
     margin: 0;
     text-align: center;
@@ -53,4 +52,12 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+@font-face {
+font-family: Regular;
+src: url(font/galette-med.otf);
+}
+* {
+font-family: Regular;
 }

@@ -86,3 +86,11 @@ a:active {
     display: table;
     clear: both;
 }
+
+@font-face {
+font-family: Regular;
+src: url(font/galette-med.otf);
+}
+* {
+font-family: Regular;
+}

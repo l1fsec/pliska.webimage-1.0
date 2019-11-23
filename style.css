@@ -43,3 +43,11 @@ border-radius: 50%;
 
 
 }
+
+@font-face {
+font-family: Regular;
+src: url(font/galette-med.otf);
+}
+* {
+font-family: Regular;
+}
