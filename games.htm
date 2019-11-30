@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Galerie</title>
+  <title>Hry</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 900px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -31,7 +31,13 @@
     footer {
       background-image: url(obrazky/gameBG.jpg);
       color: white;
-      padding: 15px;
+      background-position: center;
+      padding: 10px;
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%
+    }
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -57,10 +63,12 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a href="index.htm">Domů</a></li>
+        <li><a href="about.htm">O mě</a></li>
         <li class="active"><a href="games.htm">Hry</a></li>
         <li><a href="music.htm">Hudba</a></li>
-        <li><a href="contact.htm">Kontakt</a></li>
         <li><a href="gallery.htm">Galerie</a></li>
+        <li><a href="contact.htm">Kontakt</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -92,8 +100,9 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="footer mt-auto py-3">
+  <div class="container">
+  </div>
 </footer>
 
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Synthwave</title>
   <meta charset="utf-8">
@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -17,7 +18,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 900px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -30,7 +31,13 @@
     footer {
       background-image: url(obrazky/snt.jpg);
       color: white;
-      padding: 15px;
+        background-position: center;
+      padding: 10px;
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%
+    }
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -56,14 +63,7 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="music.htm">Hudba</a></li>
-        <li><a href="about.htm">O mě</a></li>
-        <li><a href="contact.htm">Kontakt</a></li>
-        <li><a href=""></a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="music.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
       </ul>
     </div>
   </div>
@@ -89,8 +89,9 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="footer mt-auto py-3">
+  <div class="container">
+  </div>
 </footer>
 
 </body>

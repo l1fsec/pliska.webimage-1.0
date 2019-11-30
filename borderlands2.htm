@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html>
-<title>Vítejte</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--Must do CSS here, because can't fit it in ext. file -->
-
-<style>
-body,
-    h1 {
-        font-family: sans-serif
-    }
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Hudba</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      background-image: url(obrazky/banner.jpg);
+      background-image: url(obrazky/header.jpg);
       background-position: center;
       margin-bottom: 0;
       border-radius: 0;
@@ -45,9 +29,15 @@ body,
     
     /* Set black background color, white text and some padding */
     footer {
-      background-image: url(obrazky/gameBG.jpg);
+      background-image: url(obrazky/header.jpg);
       color: white;
-      padding: 15px;
+        background-position: center;
+      padding: 10px;
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%
+    }
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -73,14 +63,7 @@ body,
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     <li><a href="music.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
       </ul>
     </div>
   </div>
@@ -89,8 +72,8 @@ body,
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="about.htm">O nás</a></p>
-      <p><a href="gallery.htm">Galerie</a></p>
+      <p><a href="snthvw.htm">Synthwave</a></p>
+      <p><a href="dms.htm">Hiphop</a></p>
       <p><a href="contact.htm">Kontakt</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
@@ -106,9 +89,9 @@ body,
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="footer mt-auto py-3">
+  <div class="container">
+  </div>
 </footer>
-
 </body>
 </html>

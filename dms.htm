@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Hudba</title>
   <meta charset="utf-8">
@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       background-image: url(obrazky/smart.jpg);
       background-position: center;
+  
       margin-bottom: 0;
       border-radius: 0;
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 900px}
     
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
+      padding-top: 100px;
       background-color: #f1f1f1;
       height: 100%;
     }
@@ -29,8 +31,13 @@
     /* Set black background color, white text and some padding */
     footer {
       background-image: url(obrazky/smart.jpg);
-      color: white;
-      padding: 15px;
+      color: #00000;
+      background-position: center;
+      padding: 10px;
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -41,11 +48,15 @@
       }
       .row.content {height:auto;} 
     }
+    .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar sticky-top navbar-light bg-light">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -56,14 +67,7 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="music.htm">Hudba</a></li>
-        <li><a href="about.htm">O mě</a></li>
-        <li><a href="contact.htm">Kontakt</a></li>
-        <li><a href=""></a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+       <li><a href="music.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
       </ul>
     </div>
   </div>
@@ -89,8 +93,9 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<footer class="footer mt-auto py-3">
+  <div class="container">
+  </div>
 </footer>
 
 </body>
