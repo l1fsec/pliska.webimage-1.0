@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Hudba</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      background-image: url(obrazky/header.jpg);
-      background-position: center;
-      margin-bottom: 0;
-      border-radius: 0;
+    <title>Hudba</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="obrazky/favicon.ico">
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            background-image: url(obrazky/kkg.jpg);
+            background-position: top;
+            background-size: cover;
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 900px
+
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 20px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-image: url(obrazky/kkg.jpg);
+            background-position: bottom;
+            background-size: cover;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%
+        }
     }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-image: url(obrazky/header.jpg);
-      color: white;
-        background-position: center;
-      padding: 10px;
-      position: fixed;
-      height: 100px;
-      bottom: 0;
-      width: 100%
-    }
-    }
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+        .sidenav {
+            height: auto;
+            padding: 15px;
+        }
+        
+        .row.content {
+            height: auto;
+        }
     }
-  </style>
+    </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-     <li><a href="music.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="games.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
       </ul>
     </div>
   </div>
 </nav>
-  
+
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="snthvw.htm">Synthwave</a></p>
-      <p><a href="dms.htm">Hiphop</a></p>
-      <p><a href="contact.htm">Kontakt</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Vítejte.</h1>
-      <p>Ahoj, dobrý den. Vítejte na našich stránkách. </p>
-      <hr>
-      <h3>Tady nic není.</h3>
-      <p>Prázdná stránka</p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      </div>
-    </div>
-  </div>
-</div>
+      <p><a href="https://store.steampowered.com/app/729040/Borderlands_Game_of_the_Year_Enhanced/?curator_clanid=33338128">Borderlands k zakoupení</a></p>
+                            <p><a href="https://store.steampowered.com/app/49520/Borderlands_2/">Borderlands 2 k zakoupení</a></p>
+                            <p><a href="https://borderlands.com/en-US/shop/#rg=%22united-states%22">Borderlands 3 k zakoupení</a></p>
+                </div>
+                <div class="col-sm-8 text-left">
+                    <h1>Série Borderlands </h1>
+                    <p> Menší popovídání od videohře Borderlands a její sérii. </p>
+                    <hr>
+                    <h3>Úvod</h3>
+                    <p>Jedna z mých nejoblíbenějších sérií, které kdy mohly vyjít. Založená na FPS a RPG prvích, které dělají tyto hry tak zábavné. První díl s klasickým názvem <b> Borderlands </b> vyšel v roce  <b> 2009 </b> a jeho nástupce <b> Borderlands 2</b> vyšel v roce <b>2012</b>. Tento rok byl nejočekávanějším pro <b>Borderlands 3</b> který vyšel <b>13.9.2019</b> pro Playstation 4, Xbox One a počítače. Víceméně pro Apple macOS byl vydán až 30.10.2019. </p>
+                    <iframe src="https://www.youtube.com/embed/UKzMC90kaRw" width="600px" height="300px"></iframe>
 
-<footer class="footer mt-auto py-3">
-  <div class="container">
-  </div>
-</footer>
+					<h3>Co mě dělá tak výjimečnou hrou? </h3>
+					<p>To je prosté. Tato hra má kooperaci až pro 4 hráče u všech dílů. Kooperace zvyšuje obtížnost a tak vám pořádně dokáže zatopit. Pokud jsou někteří hráči líní, tak si na to i doplatí, protože hra při plném počtu hráčů (tedy 4) začne zběsile na celou vaši posádku posílat nepřátele.</p>
+
+                </div>
+                <div class="col-sm-2 sidenav">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+            </div>
+        </footer>
 </body>
+
 </html>
