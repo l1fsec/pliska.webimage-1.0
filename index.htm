@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html>
-<title>Vítejte</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>Vítejte</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="shortcut icon" href="obrazky/favicon.ico">
 
-<!--Must do CSS here, because can't fit it in ext. file -->
 
-<style>
-body,
+  <style>
+   body {
+   background: url('obrazky/snt.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+}
+
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      background-image: url(obrazky/snt.jpg);
+      background-position: right;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-image: url(obrazky/snt.jpg);
+      color: white;
+      background-position: center;
+      padding: 10px;
+      position: fixed;
+      height: 100px;
+      bottom: 0;
+      width: 100%
+    }
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
     h1 {
-        font-family: sans-serif
+      text-align: center;
+     color:#fc377b;
     }
-    
-    body,
-    html {
-        height: 100%
+
+    p {
+      font-size: 20px;
+      color: #fc377b;
+      text-align: center;
+
     }
-    
-    .bgimg {
-        background-image: url('obrazky/sld2.jpg');
-        min-height: 100%;
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .topnav {
-        overflow: hidden;
-        background-color: #292a2e;
-    }
-    
-    .topnav a {
-        float: left;
-        color: #364660;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .topnav a:hover {
-        background-color: #a14748;
-        color: black;
-    }
-    
-    .topnav a.active {
-        background-color: #61486b;
-        color: white;
-    }
-    
-    .topnav-right {
-        float: right;
-    }
+
+.hidden{
+  display: none;
 }
 
-@font-face {
-font-family: Regular;
-src: url(font/galette-med.otf);
-}
-* {
-font-family: Regular;
-}
-</style>
-
+  </style>
+ <script type="text/javascript">
+   $(document).ready(function () {
+    $('div.hidden').fadeIn(1500).removeClass('hidden');
+});
+ </script>
+</head>
 <body>
-    <div class="topnav">
-        <a href="about.htm">O mě</a>
-        <a href="games.htm">Hry</a>
-        <a href="music.htm">Hudba</a>
-        <a href="gallery.htm">Galerie</a> &nbsp;
-        
-        <div class="topnav-right">
-            <a href="https://www.facebook.com/HonzaFukbejs" class="fa fa-facebook"></a>
-        <a href="https://instagram.com/sneakybinch" class="fa fa-instagram"></a>
-        </div>
-    </div>
 
-    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-        <div class="w3-display-topleft w3-padding-large w3-xlarge">
-        </div>
-        <div class="w3-display-middle">
-            <h1 class="w3-jumbo w3-animate-top">Vítejte!</h1>
-            <hr class="w3-border-grey" style="margin:auto;width:40%">
-            <p class="w3-center">Vítám vás na svém blogu!</p>
-        </div>
-    </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.htm">Domů</a></li>
+        <li><a href="about.htm">O mě</a></li>
+        <li><a href="games.htm">Hry</a></li>
+        <li><a href="music.htm">Hudba</a></li>
+        <li><a href="gallery.htm">Galerie</a></li>
+      </ul>
 
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://instagram.com/sneakybinch"><span class="fa fa-instagram"></span></li><li><a href="https://facebook.com/HonzaFukbejs"><span class="fa fa-facebook"></span></li></a>
+      </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="hidden">
+  <h1>Vítejte na mé stránce!</h1>
+
+<p> Nebojte se vybrat jakoukoliv rubriku, protože pro každého se tu něco najde. :) </p>
+</div>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+     <div class="alert alert-danger alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Varování:</strong> Tyto stránky jsou stále ve vývoji.
+  </div>
+  </div>
+</footer>
 </body>
-
 </html>

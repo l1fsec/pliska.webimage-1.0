@@ -1,102 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Hudba</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      background-image: url(obrazky/smart.jpg);
-      background-position: center;
-  
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 900px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 100px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-image: url(obrazky/smart.jpg);
-      color: #00000;
-      background-position: center;
-      padding: 10px;
-      position: fixed;
-      height: 100px;
-      bottom: 0;
-      width: 100%
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-    .container {
-  width: auto;
-  max-width: 680px;
-  padding: 0 15px;
-  </style>
+    <title>Hudba</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="obrazky/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            background-image: url(obrazky/smart.jpg);
+            background-position: center;
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 900px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 100px;
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-image: url(obrazky/smart.jpg);
+            color: #00000;
+            background-position: center;
+            padding: 10px;
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+        
+        .container {
+            width: auto;
+            max-width: 680px;
+            padding: 0 15px;
+    </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse navbar sticky-top navbar-light bg-light">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-       <li><a href="music.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
+    <nav class="navbar navbar-inverse navbar sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="music.htm"><span class="glyphicon glyphicon-arrow-left"></span>Zpět</li>
       </ul>
     </div>
   </div>
 </nav>
-  
+
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
       <p><a href="snthvw.htm">Synthwave</a></p>
-      <p><a href="dms.htm">Hiphop</a></p>
-      <p><a href="contact.htm">Kontakt</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Vítejte.</h1>
-      <p>Ahoj, dobrý den. Vítejte na našich stránkách. </p>
-      <hr>
-      <h3>Tady nic není.</h3>
-      <p>Prázdná stránka</p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      </div>
-    </div>
-  </div>
-</div>
+                            <p><a href="dms.htm">Hiphop</a></p>
+                            <p><a href="contact.htm">Kontakt</a></p>
+                </div>
+                <div class="col-sm-8 text-left">
+                    <h1>Vítejte.</h1>
+                    <p>Ahoj, dobrý den. Vítejte na našich stránkách. </p>
+                    <hr>
+                    <h3>Tady nic není.</h3>
+                    <p>Prázdná stránka</p>
+                </div>
+                <div class="col-sm-2 sidenav">
+                </div>
+            </div>
+        </div>
+        </div>
 
-<footer class="footer mt-auto py-3">
-  <div class="container">
-  </div>
-</footer>
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+            </div>
+        </footer>
 
 </body>
+
 </html>
